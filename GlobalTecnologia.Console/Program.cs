@@ -14,7 +14,7 @@ namespace GlobalTecnologia
 
             int resposta = CalcularMenorNumeroDivisivelPor(num1, num2);
 
-            Console.WriteLine($"O número divisível pelos número de {num1} a {num2} é {resposta}.");
+            Console.WriteLine($"O menor número divisível pelos número de {num1} a {num2} é {resposta}.");
         }
 
         static int CalcularMenorNumeroDivisivelPor(int num1, int num2)
@@ -38,7 +38,7 @@ namespace GlobalTecnologia
 
 				if (!ok)
 				{
-					numero += 2;
+					numero++;
 				}
 			}
 
@@ -47,7 +47,7 @@ namespace GlobalTecnologia
 
         static int[] ObterRange(int start, int end)
         {
-            int length = end - start;
+            int length = (end - start) + 1;
             int[] range = new int[length];
 
 			for (int i = 0; i < length; i++, start++)
